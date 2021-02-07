@@ -1,0 +1,24 @@
+load data infile 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/prof19.txt' 
+into table prof
+fields terminated by '\t'
+lines terminated by '\r\n';
+
+load data infile 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/student19.txt' 
+into table student
+fields terminated by '\t'
+lines terminated by '\r\n';
+
+load data infile 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/course19.txt' 
+into table course
+fields terminated by '\t'
+lines terminated by '\r\n';
+
+load data infile 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/section19.txt' 
+into table section
+fields terminated by '\t'
+lines terminated by '\r\n';
+
+load data infile 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/report19.txt' 
+into table report
+fields terminated by '\t'
+lines terminated by '\r\n';

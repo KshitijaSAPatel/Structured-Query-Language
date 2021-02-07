@@ -1,0 +1,57 @@
+create database university;
+
+
+use university;
+
+DROP TABLE IF EXISTS prof, student, course, section, report;  /* cleanup old stuff */
+
+create table prof
+  (pID		 char(9) PRIMARY KEY,	 
+   lastname	 varchar(12) NOT NULL,		
+   firstname varchar(12), 
+   dept		 char(4), 
+   office	 char(6), 
+   title	 char(1),  
+   salary    decimal(8,2), 
+   mgrID	 char(9)NOT NULL REFERENCES pID);
+
+create table student
+  (sID	     char(9) PRIMARY KEY,
+   lastname  varchar(12) NOT NULL,		/* varying length string */
+   firstname varchar(12), 
+   dept		 char(4),
+   date_ent	 date,
+   cr_comp	 smallint,
+   GPA		 decimal(3,2),
+   advisor	 char(9));
+
+create table course
+  (cnum		char(6)  PRIMARY KEY,
+   name		varchar(64) NOT NULL,
+   descr	varchar(256),
+   dept		char(4) NOT NULL,
+   level	smallint,
+   credits	smallint);
+
+create table section
+  (cnum		char(6) NOT NULL,
+   secnum	char(4),   
+   pnum		char(9),
+   term		char(3),
+   PRIMARY KEY (secnum, term),
+   INDEX (secnum),
+   INDEX (term),
+   CONSTRAINT FOREIGN KEY (cnum) REFERENCES course(cnum),
+   CONSTRAINT FOREIGN KEY (pnum) REFERENCES prof(pID));
+
+create table report
+  (snum		char(9) NOT NULL REFERENCES student.sID,
+   secnum	char(4),
+   term		char(3),
+   grade	char(1),
+   PRIMARY KEY (snum, secnum, term),
+   CONSTRAINT FOREIGN KEY (snum) REFERENCES student(sID),
+   CONSTRAINT FOREIGN KEY (secnum) REFERENCES section(secnum),
+   CONSTRAINT FOREIGN KEY (term) REFERENCES section(term));
+   
+ 

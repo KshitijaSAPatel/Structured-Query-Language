@@ -1,0 +1,12 @@
+CSC111	Introduction to Computing and Computer Programming	Principles of algorithm design and structured programming.  Modular program structure; Functions and parameters.  Arrays and pointers.  Files and records.  Searching and sorting.  The C language is used.	CS	1	4
+CSC211	Data Structures	Various data structures such as lists, stacks, queues, trees, network, and compound structures;  data abstraction and primitive operations on these structures.	CS	2	4
+CSC231	Microcomputers and assembly language	An introduction to the internal workings of computers ("computer architecture"), using a microcomputer as an example.	CS	3	4
+CSC330	Topics in Information Systems	File and storage structures.  The relational, hierarchical, and network models.  Query languages, applications.  Record management services. Relational algebra.	CS	3	4
+CSC362	Systems Programming	*	CS	3	4
+CSC424	Introduction to Database Systems	A ridiculous look at a horrendously complex subject-Chi's folly.	CS	4	4
+CSC715	Database Theory	*	CS	7	3
+GOV100	Introduction to Political Science	First semester: a study of the leading ideas of the Western Political tradition.  Two lectures and one discussion.  This is a full year course.	GOVT	1	8
+MTH153	Introduction to Discrete Mathematics	An introduction to discrete (finite) mathematics with emphasis on the study of algorithms and on applications to mathematical modeling and computer science.  Topics include sets, logic, graph theory, induction, recursion, counting, and combinatorics.	MATH	1	4
+CSC228	Introduction to Discrete Mathematics	Same as MTH153.	CS	2	4
+CSC733	Natural Language Processing	Fantastically interesting course of study - a MUST!	CS	7	3
+CHI111	Intensive Elementary Chinese	The name says it all!	EALC	1	6
